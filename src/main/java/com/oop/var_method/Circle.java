@@ -1,3 +1,5 @@
+//This code reduces memory by storing the value of PI once.
+
 package com.oop.var_method;
 
 public class Circle {
