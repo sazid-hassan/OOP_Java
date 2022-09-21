@@ -25,7 +25,7 @@ public class ShoppingCart {
     public String toString()
     {
         return "ShoppingCart{\n" +
-                "Products = \n" + products +
+                "Products = \n " + products +
                 "\n}";
     }
 }

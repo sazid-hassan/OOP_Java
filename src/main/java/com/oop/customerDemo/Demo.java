@@ -1,16 +1,22 @@
 package com.oop.customerDemo;
 
+import java.util.Scanner;
+
 public class Demo {
     public static void main(String[] args) {
         ShoppingCart shoppingCart = new ShoppingCart();
 
-        Product keyBoard = new Product("Keyboard", 500);
-        Product mouse = new Product("Mouse", 400);
-        Product hub = new Product("Hub", 300);
+        Scanner scanner = new Scanner(System.in);
+
+        int height = scanner.nextInt();
+        int width = scanner.nextInt();
+        int length = scanner.nextInt();
+
+        Dimension dm = new Dimension(height, width, length);
+
+        Product keyBoard = new Product("Keyboard", 500, 5, 40, dm);
 
         shoppingCart.addProduct(keyBoard);
-        shoppingCart.addProduct(mouse);
-        shoppingCart.addProduct(hub);
 
         System.out.println(shoppingCart);
 
